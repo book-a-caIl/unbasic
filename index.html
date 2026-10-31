@@ -209,6 +209,8 @@ footer .logo{font-size:48px;display:block;margin:0 0 8px}
 .strip .t .btn{display:flex;width:100%;margin-top:10px;aspect-ratio:auto;background:var(--ink);color:var(--ivory);border-color:var(--ink)}
 .strip .t:hover .btn,.strip .t:focus-visible .btn,.strip .t:active .btn{background:var(--pink);border-color:var(--pink);color:var(--ink)}
 @media(max-width:600px){.strip .t b{font-size:12px}.strip .t small{font-size:11px}}
+/* desktop: swipeable row; mobile keeps the 2-per-row vertical grid */
+@media(min-width:861px){.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;align-items:flex-start;padding-bottom:16px}.strip.strip>.t.poster{flex:none;width:220px;scroll-snap-align:start}}
 .strip .t{display:block;width:100%;padding:0;border:0;background:none;text-align:left;font:inherit;color:inherit;text-decoration:none;cursor:pointer}
 .strip .t span{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--ivory)}
 .strip .t img{width:100%;height:100%;object-fit:cover}
